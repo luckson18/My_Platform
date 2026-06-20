@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Lucky – Data Science Student & Aspiring Data Analyst. Portfolio showcasing projects, skills, and insights."/>
+  <meta name="keywords" content="data science, portfolio, data analyst, python, machine learning, visualization"/>
+  <title>Lucky  | Data Science Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-logo">LUCKSON<span class="clover"></span></span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Lucky home">Luckson<span class="clover"></span></a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <span class="theme-icon" id="themeIcon">🌙</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero" aria-label="Introduction">
+    <img src="IMG-20260527-WA0001.jpg" alt="photo" style="width: 40%; height: 100%;"
+    <!-- Animated background shapes 
+    <div class="hero-shapes" aria-hidden="true">
+      <!--<div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div> -->
+      <div class="particle-grid"></div>
+    </div>-->
+
+    <div class="hero-container">
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Luckson Sakala<span class="clover"></span></h1>
+        <h2 class="hero-title">
+          <span class="static-text">Data Science Student | </span>
+          <span class="typed-text" id="typedText" aria-live="polite"></span><span class="cursor" aria-hidden="true">|</span>
+        </h2>
+        <p class="hero-intro">
+          I transform data into meaningful insights through analysis, visualization, and problem solving.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https:\\it-society.lovable.app" class="social-dot" aria-label="app">⚡</a>
+          <a href="mailto:lucksonsakala898@gmail.com" class="social-dot" aria-label="Email">✉</a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="social-dot" aria-label="GitHub">⌥</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-dot" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-right">
+        <div class="profile-card">
+          <div class="profile-image-wrap">
+            <div class="profile-image" aria-label="Profile photo placeholder">
+              <div class="profile-initials">L🍀</div>
+            </div>
+            <div class="profile-ring"></div>
+            <div class="profile-badge">
+              <span class="badge-dot"></span>
+              Available for internships
+            </div>
+          </div>
+          <div class="mini-stats">
+            <div class="mini-stat"><strong>10+</strong><span>Projects</span></div>
+            <div class="mini-stat"><strong>15+</strong><span>Technologies</span></div>
+            <div class="mini-stat"><strong>2nd</strong><span>Year</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Get to know me</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-image-frame">
+            <div class="about-image-inner">
+              <div class="about-chart" aria-hidden="true">
+                <!-- Mini decorative chart -->
+                <div class="chart-bars">
+                  <div class="chart-bar" style="--h:60%"><span>Python</span></div>
+                  <div class="chart-bar" style="--h:80%"><span>SQL</span></div>
+                  <div class="chart-bar" style="--h:70%"><span>ML</span></div>
+                  <div class="chart-bar" style="--h:90%"><span>EDA</span></div>
+                  <div class="chart-bar" style="--h:75%"><span>Viz</span></div>
+                </div>
+                <p class="chart-label">Skill Proficiency</p>
+              </div>
+            </div>
+            <div class="about-tag tag-1">📊 Data Driven</div>
+            <div class="about-tag tag-2">🤖 ML Enthusiast</div>
+            <div class="about-tag tag-3">📈 Visual Storyteller</div>
+            <div class="about-tag tag-3">📝 Interpret Coded Language</div>
+          </div>
+        </div>
+
+        <div class="about-content reveal reveal-right">
+          <p class="about-intro">
+            I'm a passionate Data Science student with a deep curiosity for turning raw data into compelling stories. I believe every dataset hides a narrative waiting to be discovered.
+          </p>
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-card-icon">🎓</div>
+              <div>
+                <strong>Education</strong>
+                <p>Bachelor of Science in Data Science · Year 2 · Expected Graduation 2028</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">💡</div>
+              <div>
+                <strong>Interests</strong>
+                <p>Machine Learning, Predictive Analytics, Data Visualization, Business Intelligence</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🎯</div>
+              <div>
+                <strong>Career Goal</strong>
+                <p>To become a Data Analyst or ML Engineer solving real-world problems with data-driven solutions</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🌍</div>
+              <div>
+                <strong>Beyond Data</strong>
+                <p>When I'm not crunching numbers, I enjoy chess, nature photography, and open-source contributions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section skills" aria-label="Skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What I work with</p>
+        <h2 class="section-title">Skills & Tools</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <span class="skill-cat-icon">💻</span>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>SQL</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>C++</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span class="skill-pct">55%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <span class="skill-cat-icon">📊</span>
+            <h3>Data Science</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>Data Mining</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Exploratory Data Analysis</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Data Cleaning</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Machine Learning</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Statistics</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="tools-grid">
+            <div class="tool-chip"><span class="tool-icon">📊</span>Power BI</div>
+            <div class="tool-chip"><span class="tool-icon">📗</span>Excel</div>
+            <div class="tool-chip"><span class="tool-icon">🪐</span>Jupyter</div>
+            <div class="tool-chip"><span class="tool-icon">🐬</span>MySQL</div>
+            <div class="tool-chip"><span class="tool-icon">🔀</span>Git</div>
+            <div class="tool-chip"><span class="tool-icon">🐍</span>Pandas</div>
+            <div class="tool-chip"><span class="tool-icon">🔢</span>NumPy</div>
+            <div class="tool-chip"><span class="tool-icon">📉</span>Matplotlib</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What I've built</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="project-filters reveal" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="analysis">Analysis</button>
+        <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card reveal" data-category="analysis">
+          <div class="project-thumb" style="--color: var(--accent-cyan)">
+            <div class="project-thumb-icon">📚</div>
+            <div class="project-glow"></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Student Performance Analysis</h3>
+            <p class="project-desc">Analysed academic performance data of 500+ students using Python & pandas, uncovering key factors affecting grades through correlation and regression.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Seaborn</span>
+              <span class="tag">Statistics</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-sm btn-primary">Live Demo</a>
+              <a href="https://github.com/" target="_blank" rel="noopener" class="btn-sm btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="dashboard">
+          <div class="project-thumb" style="--color: var(--primary)">
+            <div class="project-thumb-icon">💹</div>
+            <div class="project-glow"></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Sales Dashboard</h3>
+            <p class="project-desc">Interactive Power BI dashboard tracking KPIs, revenue trends, and regional sales breakdown with drill-down capabilities for a retail dataset.</p>
+            <div class="project-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Excel</span>
+              <span class="tag">SQL</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-sm btn-primary">Live Demo</a>
+              <a href="https://github.com/" target="_blank" rel="noopener" class="btn-sm btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="ml">
+          <div class="project-thumb" style="--color: var(--secondary)">
+            <div class="project-thumb-icon">🧩</div>
+            <div class="project-glow"></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Customer Segmentation</h3>
+            <p class="project-desc">Applied K-Means clustering on an e-commerce dataset to segment 10,000+ customers into distinct behaviour groups for targeted marketing.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">K-Means</span>
+              <span class="tag">Plotly</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-sm btn-primary">Live Demo</a>
+              <a href="https://github.com/" target="_blank" rel="noopener" class="btn-sm btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="dashboard">
+          <div class="project-thumb" style="--color: #10b981">
+            <div class="project-thumb-icon">📈</div>
+            <div class="project-glow"></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Data Visualization Dashboard</h3>
+            <p class="project-desc">A web-based interactive visualization suite built with D3.js showing COVID-19 trends, demographic data, and geospatial insights across continents.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">API</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-sm btn-primary">Live Demo</a>
+              <a href="https://github.com/" target="_blank" rel="noopener" class="btn-sm btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESUME ========== -->
+  <section id="resume" class="section resume" aria-label="Resume">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">My background</p>
+        <h2 class="section-title">Resume</h2>
+      </div>
+      <div class="resume-card reveal">
+        <div class="resume-left">
+          <p class="resume-summary">
+            A driven Data Science student with hands-on experience in Python, SQL, machine learning, and visual analytics. I bring both technical rigour and creative curiosity to every dataset, translating complex patterns into clear, actionable insights for decision-makers.
+          </p>
+          <ul class="resume-highlights">
+            <li>🏆 Dean's List — Academic Year 2025/26</li>
+            <li>📄 Completed Google Data Analytics Professional Certificate</li>
+            <li>🤝 Active contributor to open-source data projects</li>
+            <li>🎤 Presented at university Data Science symposium</li>
+          </ul>
+        </div>
+        <div class="resume-right">
+          <div class="resume-download-box">
+            <div class="resume-icon" aria-hidden="true">📄</div>
+            <p>Download my full resume to learn more about my experience, education, and achievements.</p>
+            <a href="#" class="btn btn-primary" download aria-label="Download Lucky's resume">⬇ Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="section stats" aria-label="Statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number" data-count="10" aria-label="10 projects completed">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-count="15" aria-label="15 technologies learned">0</div>
+          <div class="stat-label">Technologies Learned</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-count="30" aria-label="30 data visualizations built">0</div>
+          <div class="stat-label">Data Visualizations Built</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-count="500" aria-label="500 plus data records analysed">0</div>
+          <div class="stat-label">K+ Records Analysed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Let's connect</p>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">Have a project in mind, an internship opportunity, or just want to chat about data? I'd love to hear from you.</p>
+          <div class="contact-links">
+            <a href="mailto:lucksonsakala898@gmail.com" class="contact-link">
+              <span class="contact-link-icon">✉</span>
+              <span>lucky@email.com</span>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link-icon">⌥</span>
+              <span>github.com/lucky</span>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link-icon">in</span>
+              <span>linkedin.com/in/lucky</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal reveal-right">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Send a message">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name"/>
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message ✈</button>
+            <div class="form-success" id="formSuccess" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">Lucky<span class="clover">🍀</span></span>
+        <p>Transforming data into meaningful insights.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="mailto:lucksonsakala898@gmail.com" aria-label="Email">✉</a>
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">⌥</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="facebook">fb</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="instagram">ig</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Lucky · All rights reserved</p>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
